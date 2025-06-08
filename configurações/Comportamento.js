@@ -40,6 +40,7 @@ function ventilador(){
     if(botaoLigar.innerHTML === "sim" && statusConexao.innerHTML === "sim"){
         statusDoVentilador.innerHTML = "Ligado";
         statusDoVentilador.style.color = "#1aff00";
+        girarVentilador.style.animation = "spin 1s linear infinite";
 
 
     }
