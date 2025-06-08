@@ -116,6 +116,10 @@ div.conectar {
     padding: 5px;
 }
 
+div.ligar > p, div.conectar > p {
+    padding: 10px;
+}
+
 #ligar {
     padding: 10px;
     background-color: #FF674D;
