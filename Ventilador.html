@@ -10,7 +10,7 @@
 <body>
     <main class="centralizar">
 
-        <div class="ventilador">
+        <div id="ventilador" class="ventilador">
             <div class="elice elice1"></div>
             <div class="elice elice2"></div>
             <div class="elice elice3"></div>
@@ -21,19 +21,23 @@
         <div>
             <p>Ventilador <span id="status">Desligado</span></p>
         </div>
+
        <div class="ligar centralizar">
-           <span class="material-symbols-outlined">
+
+           <span id="iconLigar" class="material-symbols-outlined">
            power_settings_new
            </span>
-            <button id="ligar">Ligar o ventilador</button>
-             <p>Ventilador ligado? não</p>
+            <button id="ligar" onclick="LigarDesligar(); ventilador()">Ligar o ventilador</button>
+             <p>Ventilador ligado? <span id="statusLigado">não</span></p>
        </div>
+
         <div class="conectar centralizar">
-            <span class="material-symbols-outlined">
+
+            <span id="iconConectar" class="material-symbols-outlined">
             power
             </span>
-            <button id="conectar">Conectar na tomada</button>
-            <p>Ventilador conectado na tomada? não</p>
+            <button id="conectar" onclick="ConectarDesconectar(); ">Conectar na tomada</button>
+            <p>Ventilador conectado na tomada? <span id="statusConexao">não</span></p>
         </div>
     </main>
     <script src="configurações/Comportamento.js"></script>
