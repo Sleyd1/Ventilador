@@ -17,7 +17,7 @@
     position: relative;
     width: 200px;
     height: 200px;
-   /* animation: spin 1s linear infinite;*/
+   animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
@@ -88,7 +88,8 @@ main {
     background-color: #161516;
     height: 90svh;
     width: 70svw;
-    border: 1px solid #202520;
+    border: 1px solid #4a4a4a;
+    
 }
 
 span#status {
@@ -120,6 +121,7 @@ div.conectar {
     background-color: #FF674D;
     border-radius: 5px;
     border: none;
+    font-size: 1em;
 }
 
 #conectar {
@@ -127,7 +129,17 @@ div.conectar {
     background-color: #FF674D;
     border-radius: 5px;
     border: none;
+    font-size: 1em;
     
+}
+
+button#ligar:hover {
+    background-color: #e75e46;
+    
+}
+
+button#conectar:hover {
+    background-color: #e75e46;
     
 }
 
