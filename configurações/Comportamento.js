@@ -67,7 +67,7 @@ function ventilador(){
         girarVentilador.style.animation = "spin 0.6s linear infinite";
 
 
-    } else if(botaoLigar.innerHTML === "não" || statusConexao.innerHTML === "não"){
+    } else {
         statusDoVentilador.innerHTML = "Desligado";
         statusDoVentilador.style.color = "#FF674D";
         girarVentilador.style.animation = "none";
