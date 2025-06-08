@@ -5,26 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ventilador</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <style>
-       
-
-
-
-    </style>
+    <link rel="stylesheet" href="estilo/estilos.css">
 </head>
 <body>
-    <main>
-        <div></div>
-        <div></div>
-        <p>Ventilador <span>Desligado</span></p>
-       <span class="material-symbols-outlined">
-power_settings_new
-</span>
-        <button>Ligar o ventilador</button>
-        <span class="material-symbols-outlined">
-power
-</span>
-        <button>Conectar na tomada</button>
+    <main class="centralizar">
+
+        <div class="ventilador">
+            <div class="elice elice1"></div>
+            <div class="elice elice2"></div>
+            <div class="elice elice3"></div>
+            <div class="elice elice4"></div>
+            <div class="centro"></div>
+        </div>
+
+        <div>
+            <p>Ventilador <span id="status">Desligado</span></p>
+        </div>
+       <div class="ligar centralizar">
+           <span class="material-symbols-outlined">
+           power_settings_new
+           </span>
+            <button id="ligar">Ligar o ventilador</button>
+       </div>
+        <div class="conectar centralizar">
+            <span class="material-symbols-outlined">
+            power
+            </span>
+            <button id="conectar">Conectar na tomada</button>
+        </div>
     </main>
 </body>
 </html>

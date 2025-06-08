@@ -1,0 +1,134 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+ }
+ 
+ body {
+     background-color: #100007;
+     color: azure;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.ventilador {
+    position: relative;
+    width: 200px;
+    height: 200px;
+   /* animation: spin 1s linear infinite;*/
+}
+
+@keyframes spin {
+      0%   { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+.elice {
+    width: 30px;
+    height: 50px;
+    background-color: #1aff00;
+    margin: 10px;
+    border-radius: 300px 0 0 360px;
+}
+
+.centro {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.elice1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-129%, -120%);
+    
+}
+
+.elice2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-165%, -40%) rotate(-90deg);
+   
+}
+
+.elice3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(1%, -100%) rotate(90deg);
+    
+}
+
+.elice4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-32%, -21%) rotate(180deg);
+    
+}
+
+
+.centralizar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    
+main {  
+    background-color: #161516;
+    height: 90svh;
+    width: 70svw;
+    border: 1px solid #202520;
+}
+
+span#status {
+    color: #ff0800;
+}
+
+
+span.material-symbols-outlined {
+    font-size: 48px;
+    color: #463F3A ;
+    /*text-shadow: 0 0 16px #1aff008b, 0 0 32px #1aff00cf;*/
+    padding: 10px;
+}
+
+/*#1aff00*/
+
+div.ligar {
+    margin: 5px;
+    padding: 5px;
+}
+
+div.conectar {
+    margin: 5px;
+    padding: 5px;
+}
+
+#ligar {
+    padding: 10px;
+    background-color: #FF674D;
+    border-radius: 5px;
+    border: none;
+}
+
+#conectar {
+    padding: 10px;
+    background-color: #FF674D;
+    border-radius: 5px;
+    border: none;
+    
+    
+}
+
+
