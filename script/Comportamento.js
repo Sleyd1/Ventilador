@@ -1,55 +1,53 @@
 function ConectarDesconectar(){
-   const MUDAR_TEXTO = document.getElementById("statusConexao");
-   const MUDAR_COR = document.getElementById("conectar");
+   const mudar_Texto = document.getElementById("statusConexao");
+   const mudar_Cor = document.getElementById("conectar");
    const icon = document.getElementById("iconConectar");
 
-    
+    if (mudar_Texto.innerText === "não") {
+        mudar_Texto.innerHTML = "sim";
 
-    if (MUDAR_TEXTO.innerText === "não") {
-        MUDAR_TEXTO.innerHTML = "sim";
-   
-        MUDAR_COR.style.backgroundColor = "#1aff00";
-        MUDAR_COR.innerHTML = "Desconectar da tomada";
+        mudar_Cor.style.backgroundColor = "#1aff00";
+        mudar_Cor.innerHTML = "Desconectar da tomada";
 
         icon.style.color = "#1aff00";
         icon.style.textShadow = "0 0 4px #1aff00";
     } else {
-        MUDAR_COR.style.backgroundColor = "#FF674D";
-        MUDAR_COR.innerHTML = "Ligar o ventilador";
-        MUDAR_TEXTO.innerText = "não";
+        mudar_Cor.style.backgroundColor = "#FF674D";
+        mudar_Cor.innerHTML = "Conectar o ventilador";
+        mudar_Texto.innerText = "não";
         icon.style.color = "#463F3A";
         icon.style.textShadow = "none";
 
      }
+     ventilador();
 
 
 
 }
 
 function LigarDesligar() {
-    const MUDAR_TEXTO = document.getElementById("statusLigado");
-    const MUDAR_COR = document.getElementById("ligar");
+    const mudar_Texto = document.getElementById("statusLigado");
+    const mudar_Cor = document.getElementById("ligar");
     const icon = document.getElementById("iconLigar");
-   
-    
 
-    if (MUDAR_TEXTO.innerText === "não") {
-        MUDAR_TEXTO.innerHTML = "sim";
-   
-        MUDAR_COR.style.backgroundColor = "#1aff00";
-        MUDAR_COR.innerHTML = "Desligar o ventilador";
+
+    if (mudar_Texto.innerText === "não") {
+        mudar_Texto.innerHTML = "sim";
+
+        mudar_Cor.style.backgroundColor = "#1aff00";
+        mudar_Cor.innerHTML = "Desligar o ventilador";
 
         icon.style.color = "#1aff00";
         icon.style.textShadow = "0 0 4px #1aff00";
     } else {
-        MUDAR_COR.style.backgroundColor = "#FF674D";
-        MUDAR_COR.innerHTML = "Ligar o ventilador";
-        MUDAR_TEXTO.innerText = "não";
+        mudar_Cor.style.backgroundColor = "#FF674D";
+        mudar_Cor.innerHTML = "Ligar o ventilador";
+        mudar_Texto.innerText = "não";
         icon.style.color = "#463F3A";
         icon.style.textShadow = "none";
 
      }
-
+     ventilador();
 
 }
 
