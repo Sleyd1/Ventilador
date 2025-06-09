@@ -15,6 +15,15 @@
      align-items: center;
 }
 
+main {  
+    margin-top: 20px;
+    background-color: #161516;
+    height: 90svh;
+    width: 80svw;
+    border: 1px solid #4a4a4a;
+    
+}
+
 .ventilador {
     position: relative;
     width: 200px;
@@ -86,14 +95,7 @@
     flex-wrap: nowrap;
 }
     
-main {  
-    margin-top: 20px;
-    background-color: #161516;
-    height: 90svh;
-    width: 80svw;
-    border: 1px solid #4a4a4a;
-    
-}
+
 
 span#status {
     color: #ff0800;
