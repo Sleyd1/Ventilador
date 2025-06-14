@@ -18,7 +18,7 @@
 main {  
     margin-top: 20px;
     background-color: #161516;
-    height: 90svh;
+    height: 93svh;
     width: 80svw;
     border: 1px solid #4a4a4a;
     
@@ -105,7 +105,6 @@ span#status {
 span.material-symbols-outlined {
     font-size: 48px;
     color: #463F3A ;
-
     padding: 10px;
 }
 
@@ -114,11 +113,13 @@ span.material-symbols-outlined {
 div.ligar {
     margin: 5px;
     padding: 5px;
+   
 }
 
 div.conectar {
     margin: 5px;
     padding: 5px;
+   
 }
 
 
@@ -133,6 +134,7 @@ div.ligar > p, div.conectar > p {
     border-radius: 5px;
     border: none;
     font-size: 1em;
+    width: 70%;
 }
 
 #conectar {
@@ -141,6 +143,7 @@ div.ligar > p, div.conectar > p {
     border-radius: 5px;
     border: none;
     font-size: 1em;
+    width: 70%;
     
 }
 
